@@ -16,17 +16,60 @@
 					src='/build/avatar.umd.js'></script>
 </head>
 
-<body>
+<body style="margin-top: 25px; margin-bottom: 25px;">
 	<rendikit-avatar appereance="circle"
 									 size="64"></rendikit-avatar>
-	<br>
+
+	<hr style="margin-top: 25px; margin-bottom: 25px;">
+
 	<rendikit-avatar appereance="square"
 									 size="64"></rendikit-avatar>
-	<br>
+
+	<hr style="margin-top: 25px; margin-bottom: 25px;">
+
 	<rendikit-avatar appereance="circle"
 									 size="64"
 									 src="https://apigang.com/assets/img/amaze_300x300.jpg">
 	</rendikit-avatar>
+
+	<hr style="margin-top: 25px; margin-bottom: 25px;">
+
+	<rendikit-avatar-item primaryText="Mike Cannon-Brookes"
+												avatar="<rendikit-avatar appereance='circle' size='64' src='https://apigang.com/assets/img/amaze_300x300.jpg' />">
+	</rendikit-avatar-item>
+
+	<hr style="margin-top: 25px; margin-bottom: 25px;">
+
+	<rendikit-avatar-item secondaryText="CEO@angular-bootstrap.com"
+												avatar="<rendikit-avatar appereance='circle' size='64' src='https://apigang.com/assets/img/amaze_300x300.jpg' />">
+	</rendikit-avatar-item>
+
+	<hr style="margin-top: 25px; margin-bottom: 25px;">
+
+	<rendikit-avatar-item primaryText="Mike Cannon-Brookes"
+												secondaryText="CEO@angular-bootstrap.com"
+												avatar="<rendikit-avatar appereance='circle' size='64' src='https://apigang.com/assets/img/amaze_300x300.jpg' />">
+	</rendikit-avatar-item>
+
+	<hr style="margin-top: 25px; margin-bottom: 25px;">
+
+	<div style="width: 200px; border: 1px solid pink; padding: 6px;">
+		<rendikit-avatar-item primaryText="Mike Cannon-Brookes"
+													secondaryText="CEO@angular-bootstrap.com"
+													isTruncation="true"
+													avatar="<rendikit-avatar appereance='circle' size='64' src='https://apigang.com/assets/img/amaze_300x300.jpg' />">
+		</rendikit-avatar-item>
+	</div>
+
+	<hr style="margin-top: 25px; margin-bottom: 25px;">
+
+	<div style="width: 200px; border: 1px solid pink; padding: 6px;">
+		<rendikit-avatar-item primaryText="Mike Cannon-Brookes"
+													secondaryText="CEO@angular-bootstrap.com"
+													isTruncation="false"
+													avatar="<rendikit-avatar appereance='circle' size='64' src='https://apigang.com/assets/img/amaze_300x300.jpg' />">
+		</rendikit-avatar-item>
+	</div>
 </body>
 
 </html>

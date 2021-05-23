@@ -51,42 +51,28 @@
 </span>
 
 <style lang="scss">
+  @import 'tailwindcss/base';
+  @import 'tailwindcss/components';
+  @import 'tailwindcss/utilities';
+
   span {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    box-sizing: content-box;
-    cursor: inherit;
-    outline: none;
-    overflow: hidden;
+    @apply static flex flex-col items-stretch justify-center box-content cursor-default outline-none overflow-hidden border-0 p-0;
     transform: translateZ(0px);
     transition: transform 200ms ease 0s, opacity 200ms ease 0s;
     box-shadow: var(--neutral-200) 0px 0px 0px 1px;
-    border: none;
-    padding: 0px;
     width: var(--width);
     height: var(--height);
     border-radius: var(--border-radius);
 
     .empty {
+      @apply block w-full h-full;
       background-color: var(--neutral-200);
-      width: 100%;
-      height: 100%;
-      display: block;
 
       span {
-        display: inline-block;
-        flex-shrink: 0;
-        line-height: 1;
+        @apply inline-block flex-shrink-0 leading-none;
 
         svg {
-          max-height: 100%;
-          max-width: 100%;
-          vertical-align: bottom;
-          overflow: hidden;
-          pointer-events: none;
+          @apply max-w-full max-h-full align-bottom overflow-hidden pointer-events-none;
           color: var(--white);
           fill: var(--neutral-200);
           width: var(--width);
@@ -96,15 +82,8 @@
     }
 
     .image {
+      @apply flex flex-auto w-full h-full bg-transparent bg-center bg-no-repeat bg-cover;
       background-image: var(--background-image);
-      background-color: transparent;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex: 1 1 100%;
-      height: 100%;
-      width: 100%;
     }
   }
 </style>
